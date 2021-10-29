@@ -18,7 +18,8 @@ h_theta = X * theta;
 
 %Cost function J_theta = 1/(2*m) * sum (error_sqr) 
 % error_sqr = h_theta - y
-J = (1/(2*m))* (h_theta - y);
+J = (1/(2*m))*sum((h_theta - y).^2);
+
 % =========================================================================
 
 end
